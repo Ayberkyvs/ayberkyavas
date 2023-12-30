@@ -1,0 +1,100 @@
+.gamecontainer {
+  width: 100%;
+  height: auto;
+  padding: 2rem 7rem;
+  border-radius: 14px;
+  background: #fff;
+}
+.result_images {
+  display: flex;
+  justify-content: center;
+  column-gap: 7rem;
+  margin-bottom: 40px;
+}
+.gamecontainer.start .user_result {
+  transform-origin: left;
+  animation: userShake 0.7s ease infinite;
+}
+@keyframes userShake {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+.gamecontainer.start .cpu_result {
+  transform-origin: right;
+  animation: cpuShake 0.7s ease infinite;
+}
+@keyframes cpuShake {
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+.result_images img {
+  width: 100px;
+}
+.user_result img {
+  transform: rotate(90deg);
+}
+.cpu_result img {
+  transform: rotate(-90deg) rotateY(180deg);
+}
+.user_result p {
+  float: left;
+  font-size: 20px;
+}
+.cpu_result p {
+  float: right;
+  font-size: 20px;
+}
+.result {
+  text-align: center;
+  font-size: 2rem;
+  color: #0b0c10;
+  margin-top: 1.5rem;
+}
+.option_image img {
+  width: 50px;
+}
+.option_images {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+  justify-content: space-between;
+}
+.gamecontainer.start .option_images {
+  pointer-events: none;
+}
+.option_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.option_image:hover {
+  opacity: 1;
+}
+.option_image.active {
+  opacity: 1;
+}
+.option_image img {
+  pointer-events: none;
+}
+.option_image p {
+  color: #0b0c10;
+  font-size: 1.235rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+.volume-button {
+  width: auto;
+  padding: 3px 10px 3px 10px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.volume-button i {
+  color: black;
+}
