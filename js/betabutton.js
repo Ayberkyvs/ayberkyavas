@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", run);
 function run() {
   console.log("calisiyor");
   betaButton.addEventListener("click", showAlert);
-  setTimeout(function () {
+  /*setTimeout(function () {
     showAlert();
-  }, 5000);
+  }, 5000);*/
 }
 
 function showAlert() {
