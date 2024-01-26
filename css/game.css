@@ -1,9 +1,9 @@
 .gamecontainer {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   padding: 2rem 7rem;
   border-radius: 14px;
-  background: #fff;
+  background: white;
 }
 .result_images {
   display: flex;
@@ -60,7 +60,8 @@
   display: flex;
   align-items: center;
   margin-top: 2.5rem;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
 }
 .gamecontainer.start .option_images {
   pointer-events: none;

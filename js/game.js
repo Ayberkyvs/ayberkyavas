@@ -100,7 +100,7 @@ optionImages.forEach((image, index) => {
   image.addEventListener("click", (e) => {
     image.classList.add("active");
 
-    userResult.src = cpuResult.src = "images/rock.png";
+    userResult.src = cpuResult.src = "images/rock2.png";
     result.textContent = "Yükleniyor...";
 
     // Loop through each option image again
@@ -125,9 +125,9 @@ optionImages.forEach((image, index) => {
       let randomNumber = Math.floor(Math.random() * 3);
       // Create an array of CPU image options
       let cpuImages = [
-        "images/rock.png",
-        "images/paper.png",
-        "images/scissors.png",
+        "images/rock2.png",
+        "images/paper2.png",
+        "images/scissors2.png",
       ];
       // Set the CPU image to a random option from the array
       cpuResult.src = cpuImages[randomNumber];

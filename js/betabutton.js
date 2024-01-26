@@ -11,8 +11,8 @@ function run() {
 
 function showAlert() {
   Swal.fire({
-    title: "Bilgilendirme",
-    text: "Web sitesi geliştirme sürecinde, olası hatalar ve kusurlar ortaya çıkabilir. Lütfen bize bildirerek katkıda bulununuz.",
+    title: "Information",
+    text: "The website will undergo a comprehensive overhaul in the near future, leveraging powerful technologies such as Next.js and Tailwind. This modernization aims to enhance user experience and optimize site performance. The new design is planned to encompass user-friendly interfaces, fast loading times, and customizable features.",
     icon: "question",
     backdrop: `
     rgba(1,255,221,0.1)
